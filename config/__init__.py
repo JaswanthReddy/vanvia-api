@@ -16,13 +16,13 @@ class DefaultConfig:
     TODO: move this to a file, config.json?
     """
     JWT_SECRET_KEY = "vanvia-hoder-api"
-    SQLALCHEMY_DATABASE_URI = "sqlite:///vanvia.db"
+    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:postgres@localhost:5432/vanvia"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     CORS_HEADERS = "Content-Type"
 
     db_admin = {
-        "user": "vanvia-admin@vanvia.com",
-        "password": "Vanvia@123"
+        "user": "postgres",
+        "password": "postgres"
     }
 
     menu = {
